@@ -1,1 +1,103 @@
 /* Desenvolva sua estilização aqui ... */
+
+.options__container{
+    margin-top: 65px;
+}
+
+.genre__container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.buttons__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.button__button{
+    padding: 16px 8px;
+    border: 1px solid var(--color-grey-8);
+}
+
+.price__container{
+    margin-top: 76px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.price__range{
+    display: block;
+    width: 100%;
+}
+
+.musics__container{
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.discs__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+}
+
+.card__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*  */
+.card__container.darkMode {
+    background-color: var(--color-grey-1);
+}
+
+.card__image{
+    image-rendering: crisp-edges;
+    margin-top: -10px; 
+    margin-left: -10px; 
+    margin-right: -10px; 
+}
+
+.card__text{
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-4);
+    color: var(--color-grey-2);
+}
+/*  */
+.card__text darkMode{
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-4);
+    color: var(--color-grey-3);
+}
+
+.card__button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__span{
+    display: flex;
+    gap: 2px;
+}
+
+.card__button {
+    padding: 16px 8px;
+    border: 1px solid  var(--color-grey-7);
+  }
+  
+

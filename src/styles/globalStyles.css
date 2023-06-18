@@ -26,6 +26,10 @@
   --font-1: 1.75rem;
   --font-2: 1rem;
   --font-3: 0.875rem;
+  --font-4: .75rem;
+
+  --font-weight-1: 600;
+  --font-weight-2: 500;
 
   --radius-1: 0.25rem;
   --container: 45rem;
@@ -36,6 +40,13 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-grey-9);
+  margin: 0 auto;
+  padding: 77px 20%;
+}
+/*  */
+body.darkMode{
+  background-color: var(--color-grey-0);
+  color: var(--color-grey-8);
 }
 
 .container {
@@ -43,4 +54,67 @@ body {
   max-width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title{
+  font-weight: 600;
+  font-size: var(--font-1);
+}
+
+.header__title darkMode{
+  background-color: var(--color-grey-8);
+}
+
+.header__image{
+  padding: 9px 10px;
+  background-color: var(--color-grey-8);
+  cursor: pointer;
+}
+
+.header__image:hover{
+  background-color: var(--color-grey-5);
+}
+
+button{
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--color-grey-7);
+  color: var(--color-grey-2);
+  font-size: var(--font-3);
+  font-weight: var(--font-weight-2);
+}
+
+button:hover{
+  color: var(--color-grey-8);
+  background-color: var(--color-grey-1);
+}
+/*  */
+button.darkMode{
+  color: var(--color-grey-3);
+  background-color: var(--color-grey-2);
+  border: none;
+}
+/*  */
+button.darkMode:hover{
+  color: var(--color-grey-9);
+  border: 1px solid var(--color-grey-9);
+}
+
+h1, h2{
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-2);
+  color: var(--color-grey-1);
+}
+/*  */
+h1.darkMode, h2.darkMode{
+  color: var(--color-grey-8);
+}
+/*  */
+p.darkMode, span.darkMode{
+  color: var(--color-grey-8);
 }

@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <title>Open Music</title>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="">
+    <header class="header__container">
+      <h1 class="header__title">open music</h1>
+      <img class="header__image" onclick="changeTheme(), toggleDarkMode()" src="./src/assets/img/moon.svg" alt="lua">
+    </header>
+    <main>
+      <section class="options__container">
+        <div class="genre__container">
+          <h2 class="genre__title">Gênero Musical</h2>
+          <ul class="buttons__container">
+
+          </ul>
+        </div>
+        <div class="price__container">
+          <h2 class="price__title">Definir Preço</h2>
+          <p class="price__text">Até R$ <span class="price__span">0</span></p>
+          <input class="price__range" type="range" min="0" max="100" step="1" value="100" name="" id="">
+        </div>
+      </section>
+      <section class="musics__container">
+        <h2 class="musics__title">Álbuns Encontrados</h2>
+        <ul class="discs__container">
+        </ul>
+      </section>
+    </main>
     <script src="./src/scripts/theme.js"></script>
     <script src="./src/scripts/productsData.js"></script>
     <script src="./src/scripts/index.js"></script>
